@@ -50,54 +50,14 @@ O menu do sistema inclui:
 15. Excluir Cliente (com verificação de dependência)  
 16. Excluir Motorista (com verificação de dependência)  
 0. Sair  
-
----
-
-## 🛠️ Requisitos Técnicos
-- **Java 11+**  
-- **Maven**  
-- **Banco de Dados**: MySQL ou PostgreSQL  
-- **Driver JDBC** correspondente  
-- Uso de:  
-  - `PreparedStatement` e `ResultSet`  
-  - `java.time` para manipulação de datas  
-  - Consultas SQL com `JOIN`, `GROUP BY`, filtros e condições  
-
----
-
-## 🏗️ Estrutura do Projeto
-```
-src/
- └── main/java/
-      ├── model/    # Classes das entidades
-      ├── dao/      # Acesso ao banco (CRUD)
-      ├── service/  # Regras de negócio
-      └── view/     # Interação via console (Scanner)
-```
-
----
-
-## 📊 Critérios de Avaliação
-- Funcionamento dos relacionamentos → **30 pontos**  
-- Uso correto de JOINs e GROUP BY → **20 pontos**  
-- Relatórios úteis e organizados → **20 pontos**  
-- Estrutura de código em camadas → **20 pontos**  
-- Criatividade e recursos extras → **10 pontos**  
-
 ---
 
 ## 🚀 Como Executar
 1. Clone este repositório:  
    ```bash
-   git clone https://github.com/seu-usuario/sistema-logistica-entregas.git
+   git clone https://github.com/LorhanPierre/SistemaLogistica.git
    ```
 2. Configure o banco de dados (MySQL ou PostgreSQL).  
-3. Atualize o `application.properties` (ou classe de conexão) com suas credenciais.  
-4. Compile e rode o projeto:  
-   ```bash
-   mvn clean install
-   mvn exec:java -Dexec.mainClass="com.seuprojeto.Main"
-   ```
 
 ---
 
