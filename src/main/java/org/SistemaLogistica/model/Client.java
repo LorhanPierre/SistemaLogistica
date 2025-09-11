@@ -2,26 +2,26 @@ package org.SistemaLogistica.model;
 
 public class Client {
 
-    private String nome;
+    private String name;
     private String cpfCnpj;
-    private String endereço;
-    private String cidade;
+    private String adress;
+    private String city;
     private String estado;
 
-    public Client(String nome, String cpfCnpj, String endereço, String cidade, String estado) {
-        this.nome = nome;
+    public Client(String name, String cpfCnpj, String adress, String city, String estado) {
+        this.name = name;
         this.cpfCnpj = cpfCnpj;
-        this.endereço = endereço;
-        this.cidade = cidade;
+        this.adress = adress;
+        this.city = city;
         this.estado = estado;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getCpfCnpj() {
@@ -32,20 +32,20 @@ public class Client {
         this.cpfCnpj = cpfCnpj;
     }
 
-    public String getEndereço() {
-        return endereço;
+    public String getAdress() {
+        return adress;
     }
 
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
+    public void setAdress(String adress) {
+        this.adress = adress;
     }
 
-    public String getCidade() {
-        return cidade;
+    public String getCity() {
+        return city;
     }
 
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getEstado() {
