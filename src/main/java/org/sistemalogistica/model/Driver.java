@@ -1,4 +1,4 @@
-package org.sistemaLogistica.model;
+package org.sistemalogistica.model;
 
 public class Driver {
 
