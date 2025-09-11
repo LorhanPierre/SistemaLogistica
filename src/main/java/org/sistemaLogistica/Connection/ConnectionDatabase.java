@@ -1,4 +1,4 @@
-package org.SistemaLogistica.Connection;
+package org.sistemaLogistica.Connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

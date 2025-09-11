@@ -1,4 +1,4 @@
-package org.SistemaLogistica.model;
+package org.sistemaLogistica.model;
 
 public class Client {
 
