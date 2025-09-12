@@ -2,16 +2,23 @@ package org.sistemalogistica.model;
 
 public class Driver {
 
+    private int id;
+
     private String name;
     private String cnh;
     private String vehicle;
     private String baseCity;
 
-    public Driver(String name, String cnh, String vehicle, String baseCity) {
+    public Driver(int id, String name, String cnh, String vehicle, String baseCity) {
+        this.id = id;
         this.name = name;
         this.cnh = cnh;
         this.vehicle = vehicle;
         this.baseCity = baseCity;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
