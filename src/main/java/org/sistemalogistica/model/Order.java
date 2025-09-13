@@ -1,10 +1,12 @@
 package org.sistemalogistica.model;
 
+import org.sistemalogistica.model.enums.StatusOrder;
+
 import java.time.LocalDate;
 
 public class Order {
 
-    private Long id;
+    private Integer id;
 
     private Client clientID;
     private LocalDate dateOrder;
@@ -12,7 +14,7 @@ public class Order {
     private double weight;
     private StatusOrder status;
 
-    public Order(Long id, Client clientID, LocalDate dateOrder, double weight, StatusOrder status) {
+    public Order(Integer id, Client clientID, LocalDate dateOrder, double weight, StatusOrder status) {
 
         this.id = id;
         this.clientID = clientID;
@@ -22,7 +24,7 @@ public class Order {
 
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 

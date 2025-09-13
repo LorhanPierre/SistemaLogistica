@@ -1,4 +1,4 @@
-package org.sistemalogistica.model;
+package org.sistemalogistica.model.enums;
 
 public enum StatusOrder {
     PENDENTE,
