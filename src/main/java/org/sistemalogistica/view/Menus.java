@@ -1,8 +1,16 @@
 package org.sistemalogistica.view;
 
-public class menus {
+import java.util.Scanner;
+import org.sistemalogistica.utils.Utils;
+
+public class Menus {
+
+    Scanner input = new Scanner(System.in);
+    static Utils utils = new Utils();
 
     public int TelaInicial(){
+
+        boolean erro = false;
 
         System.out.println("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
         System.out.println("┃         Bem vindo ao RouteSystem         ┃");
@@ -21,8 +29,7 @@ public class menus {
         System.out.println("┃ 10 - Excluir()                           ┃");
         System.out.println("┃                                          ┃");
         System.out.println("┃ 0 - sair                                 ┃");
-        System.out.println("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
-
-        return 0;
+        System.out.print("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n:");
+        return Utils.inputNumber();
     }
 }
