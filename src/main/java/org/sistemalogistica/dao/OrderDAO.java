@@ -15,7 +15,13 @@ public class OrderDAO {
         try(Connection conn = ConnectionDatabase.conectar();
             PreparedStatement stmt = conn.prepareStatement(query)){
 
-            stmt.setClientID();
+            stmt.setInt(1,order.getClientID());
+            stmt.setDate(2, java.sql.Date.valueOf(order.getDateOrder()));
+            stmt.setDouble(3, order.getVolume());
+            stmt.setDouble(4, order.getWeight());
+            stmt.setString(5, order.getStatus().toString());
+            stmt.executeUpdate();
         }
     }
+
 }

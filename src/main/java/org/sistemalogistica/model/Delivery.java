@@ -7,13 +7,13 @@ import java.time.LocalDate;
 public class Delivery {
 
     private Integer idDelivery;
+    private Integer driverID;
 
-    private Driver driverID;
     private LocalDate leaveDate;
     private LocalDate dateDelivery;
     private StatusDelivery status;
 
-    public Delivery(Integer idDelivery, Driver driverID, LocalDate leaveDate, LocalDate dateDelivery, StatusDelivery status) {
+    public Delivery(Integer idDelivery, Integer driverID, LocalDate leaveDate, LocalDate dateDelivery, StatusDelivery status) {
         this.idDelivery = idDelivery;
         this.driverID = driverID;
         this.leaveDate = LocalDate.now();
@@ -27,7 +27,7 @@ public class Delivery {
         this.status = status;
     }
 
-    public void setDriverID(Driver driverID) {
+    public void setDriverID(Integer driverID) {
         this.driverID = driverID;
     }
 
@@ -35,7 +35,7 @@ public class Delivery {
         return idDelivery;
     }
 
-    public Driver getDriverID() {
+    public Integer getDriverID() {
         return driverID;
     }
 

@@ -7,14 +7,14 @@ import java.time.LocalDate;
 public class Order {
 
     private Integer id;
+    private Integer clientID;
 
-    private Client clientID;
     private LocalDate dateOrder;
     private double  volume;
     private double weight;
     private StatusOrder status;
 
-    public Order(Integer id, Client clientID, LocalDate dateOrder, double weight, StatusOrder status) {
+    public Order(Integer id, Integer clientID, LocalDate dateOrder, double weight, StatusOrder status) {
 
         this.id = id;
         this.clientID = clientID;
@@ -28,11 +28,11 @@ public class Order {
         return id;
     }
 
-    public Client getClientID() {
+    public Integer getClientID() {
         return clientID;
     }
 
-    public void setClientID(Client clientID) {
+    public void setClientID(Integer clientID) {
         this.clientID = clientID;
     }
 
