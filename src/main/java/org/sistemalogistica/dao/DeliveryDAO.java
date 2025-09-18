@@ -23,4 +23,8 @@ public class DeliveryDAO {
 
         }
     }
+
+    public void updateStatusDelivery() throws Exception{
+
+    }
 }

@@ -1,4 +1,4 @@
-package org.sistemalogistica.service;
+package org.sistemalogistica.controller;
 
 import org.sistemalogistica.view.Menus;
 import org.sistemalogistica.view.Messages;
@@ -14,9 +14,16 @@ public class SistemaLogistica {
 
         while(!end){
 
-            switch (menu.TelaInicial()){
+            switch (menu.home()){
 
-                case 1 ->{}
+                case 1 ->{
+                    switch (menu.registrationType()){
+                        case 1 ->{
+
+                        }
+                        case 2 ->{}
+                    }
+                }
                 case 2 ->{}
                 case 3 ->{}
                 case 4 ->{}

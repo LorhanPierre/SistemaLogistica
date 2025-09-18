@@ -8,9 +8,7 @@ public class Menus {
     Scanner input = new Scanner(System.in);
     static Utils utils = new Utils();
 
-    public int TelaInicial(){
-
-        boolean erro = false;
+    public int home(){
 
         System.out.println("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
         System.out.println("┃         Bem vindo ao RouteSystem         ┃");
@@ -31,5 +29,19 @@ public class Menus {
         System.out.println("┃ 0 - sair                                 ┃");
         System.out.print("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n:");
         return Utils.inputNumber();
+    }
+
+    public int registrationType(){
+
+        System.out.println("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
+        System.out.println("┃       Escolha o que deseja Cadastar      ┃");
+        System.out.println("┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫");;
+        System.out.println("┃ 1 - Cliente                              ┃");
+        System.out.println("┃ 2 - Motorista                            ┃");
+        System.out.println("┃                                          ┃");
+        System.out.println("┃ 0 - sair                                 ┃");
+        System.out.print("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n:");
+        return Utils.inputNumber();
+
     }
 }

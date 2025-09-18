@@ -1,6 +1,6 @@
 package org.sistemalogistica.app;
 
-import org.sistemalogistica.service.SistemaLogistica;
+import org.sistemalogistica.controller.SistemaLogistica;
 
 public class Main {
     public static void main(String[] args) {
