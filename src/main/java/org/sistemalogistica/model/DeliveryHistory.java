@@ -1,21 +1,23 @@
 package org.sistemalogistica.model;
 
+import java.time.LocalDate;
+
 public class DeliveryHistory {
 
     private Integer id;
     private Integer deliveryId;
 
-    private String dateEvent;
+    private LocalDate dateEvent;
     private String description;
 
-    public DeliveryHistory(Integer id, Integer deliveryId, String dateEvent, String description) {
+    public DeliveryHistory(Integer id, Integer deliveryId, LocalDate dateEvent, String description) {
         this.id = id;
         this.deliveryId = deliveryId;
         this.dateEvent = dateEvent;
         this.description = description;
     }
 
-    public DeliveryHistory(String dateEvent, String description) {
+    public DeliveryHistory(LocalDate dateEvent, String description) {
         this.dateEvent = dateEvent;
         this.description = description;
     }
@@ -36,11 +38,11 @@ public class DeliveryHistory {
         this.deliveryId = deliveryId;
     }
 
-    public String getDateEvent() {
+    public LocalDate getDateEvent() {
         return dateEvent;
     }
 
-    public void setDateEvent(String dateEvent) {
+    public void setDateEvent(LocalDate dateEvent) {
         this.dateEvent = dateEvent;
     }
 
