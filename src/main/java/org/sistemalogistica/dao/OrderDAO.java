@@ -5,10 +5,11 @@ import org.sistemalogistica.model.Order;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class OrderDAO {
 
-    public void createOrder(Order order) throws Exception{
+    public void createOrder(Order order) throws SQLException {
 
         String query = "INSERT INTO Pedido (cliente_id,data_Pedido,volume_m3,peso_kg,status) VALUES (?,?,?,?,?)";
 

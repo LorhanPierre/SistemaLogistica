@@ -5,10 +5,11 @@ import org.sistemalogistica.model.Delivery;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class DeliveryDAO {
 
-    public void createDelivery(Delivery delivery) throws Exception{
+    public void createDelivery(Delivery delivery) throws SQLException {
 
         String query = "INSERT INTO Entrega (motorista_id,data_saida,data_entrega,status) VALUES (?,?,?,?)";
 

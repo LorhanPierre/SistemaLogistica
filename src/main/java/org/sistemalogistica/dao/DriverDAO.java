@@ -5,10 +5,11 @@ import org.sistemalogistica.model.Driver;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class DriverDAO {
 
-    public void createDriver(Driver driver) throws Exception{
+    public void createDriver(Driver driver) throws SQLException {
 
         String query = "INSERT INTO Motorista (nome,cnh,veiculo,cidade_base) VALUES (?,?,?,?)";
 

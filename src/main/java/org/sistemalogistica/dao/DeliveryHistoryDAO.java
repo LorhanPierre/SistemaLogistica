@@ -5,10 +5,11 @@ import org.sistemalogistica.model.DeliveryHistory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class DeliveryHistoryDAO {
 
-    public void RegisterEvent(DeliveryHistory deliveryHistory) throws Exception{
+    public void RegisterEvent(DeliveryHistory deliveryHistory) throws SQLException {
 
         String query = "INSERT INTO HistoricoEntrega (entrega_id, data_evento, descricao) VALUES (?, ?, ?)";
 

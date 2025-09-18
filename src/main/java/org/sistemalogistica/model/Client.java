@@ -19,6 +19,15 @@ public class Client {
         this.state = state;
     }
 
+    public Client(String name, String cpfCnpj, String adress, String city, String state) {
+        this.id = id;
+        this.name = name;
+        this.cpfCnpj = cpfCnpj;
+        this.adress = adress;
+        this.city = city;
+        this.state = state;
+    }
+
     public Integer getId() {
         return id;
     }

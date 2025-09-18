@@ -5,10 +5,11 @@ import org.sistemalogistica.model.Client;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class ClientDAO {
 
-    public void createClient(Client client) throws Exception{
+    public void createClient(Client client) throws SQLException{
 
         String query = "INSERT INTO Cliente (nome,cpf_cnpj,endereco,cidade,estado) VALUES (?,?,?,?,?)";
 
