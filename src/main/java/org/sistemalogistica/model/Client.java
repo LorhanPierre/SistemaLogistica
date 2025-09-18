@@ -20,7 +20,6 @@ public class Client {
     }
 
     public Client(String name, String cpfCnpj, String adress, String city, String state) {
-        this.id = id;
         this.name = name;
         this.cpfCnpj = cpfCnpj;
         this.adress = adress;

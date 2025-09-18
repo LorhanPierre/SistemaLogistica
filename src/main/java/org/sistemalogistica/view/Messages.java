@@ -13,4 +13,10 @@ public class Messages {
         System.out.println("┃             Até a próxima, Tchau :)              ┃");
         System.out.println("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
     }
+
+    public void databaseError(){
+        System.err.println("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
+        System.err.println("┃Ocorreu um erro no Banco de Dados ao Realizar ação┃");
+        System.err.println("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
+    }
 }

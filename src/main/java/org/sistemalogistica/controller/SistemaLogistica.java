@@ -1,5 +1,6 @@
 package org.sistemalogistica.controller;
 
+import org.sistemalogistica.service.ServiceClient;
 import org.sistemalogistica.view.Menus;
 import org.sistemalogistica.view.Messages;
 
@@ -19,7 +20,8 @@ public class SistemaLogistica {
                 case 1 ->{
                     switch (menu.registrationType()){
                         case 1 ->{
-
+                            var client = new ServiceClient();
+                            client.createClient();
                         }
                         case 2 ->{}
                     }

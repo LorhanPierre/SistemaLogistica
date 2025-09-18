@@ -3,12 +3,14 @@ package org.sistemalogistica.service;
 import org.sistemalogistica.dao.ClientDAO;
 import org.sistemalogistica.model.Client;
 import org.sistemalogistica.view.Inputs;
+import org.sistemalogistica.view.Messages;
 
 import java.sql.SQLException;
 
 public class ServiceClient {
 
     Inputs data = new Inputs();
+    Messages messages = new Messages();
 
     public void createClient(){
 
@@ -24,7 +26,7 @@ public class ServiceClient {
         try {
             clientDAO.createClient(client);
         } catch (SQLException e) {
-            System.err.println(error.getMessage());
+            messages.databaseError();
         }
 
     }
