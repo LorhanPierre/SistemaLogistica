@@ -1,6 +1,7 @@
 package org.sistemalogistica.controller;
 
 import org.sistemalogistica.service.ServiceClient;
+import org.sistemalogistica.service.ServiceDriver;
 import org.sistemalogistica.view.Menus;
 import org.sistemalogistica.view.Messages;
 
@@ -23,7 +24,10 @@ public class SistemaLogistica {
                             var client = new ServiceClient();
                             client.createClient();
                         }
-                        case 2 ->{}
+                        case 2 ->{
+                            var driver = new ServiceDriver();
+                            driver.createDriver();
+                        }
                     }
                 }
                 case 2 ->{}

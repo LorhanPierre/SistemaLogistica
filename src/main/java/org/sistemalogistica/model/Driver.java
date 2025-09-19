@@ -17,6 +17,13 @@ public class Driver {
         this.baseCity = baseCity;
     }
 
+    public Driver(String name, String cnh, String vehicle, String baseCity) {
+        this.name = name;
+        this.cnh = cnh;
+        this.vehicle = vehicle;
+        this.baseCity = baseCity;
+    }
+
     public int getId() {
         return id;
     }

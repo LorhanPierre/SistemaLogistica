@@ -25,6 +25,7 @@ public class ServiceClient {
 
         try {
             clientDAO.createClient(client);
+            messages.registerSuccess();
         } catch (SQLException e) {
             messages.databaseError();
         }
